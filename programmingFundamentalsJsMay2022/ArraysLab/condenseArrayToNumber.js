@@ -1,6 +1,5 @@
 function condenseArrayToNumber(array) {
-    let end = 1;
-    while (end !== array.length) {
+        while (array.length > 1) {
         let sum = [];
         for (let index = 0; index < array.length - 1; index++) {
             sum[index] = array[index] + array[index + 1];
