@@ -8,12 +8,14 @@ function loadingBar(number) {
         loadingArray.shift();
         loadingArray.push('.');
     }
-    if (isLoading) {
-        console.log(`${number}% [${loadingArray.join('')}]`);
-        console.log('Still loading...');
-    } else {
-        console.log('100% Complete!');
-    }
-
+    // if (isLoading) {
+    //     console.log(`${number}% [${loadingArray.join('')}]`);
+    //     console.log('Still loading...');
+    // } else {
+    //     console.log('100% Complete!');
+    // }
+    let result = isLoading ? `${number}% [${loadingArray.join('')}]\nStill loading...` :
+        '100% Complete!';
+    console.log(result);
 }
 loadingBar(30);
