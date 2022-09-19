@@ -9,5 +9,15 @@ function triangleOfNumbers(n) {
         start++;
         console.log(sum);
     }
+
+    // Another solution:
+
+    // for (let i = 1; i <=end; i++) { 
+    //     sum = '';
+    //     for (let r = 1; r <= i; r++) {
+    //        sum += ` ${i}`;
+    //     }
+    //     console.log(sum);
+    // }
 }
 triangleOfNumbers(3)
