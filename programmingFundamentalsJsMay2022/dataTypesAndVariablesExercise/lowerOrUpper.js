@@ -6,5 +6,13 @@ function lowerOrUpper(character) {
     } else {
         console.log('lower-case');
     }
+
+//     Another solution:
+
+//     let currentChar = character.toLowerCase()
+
+//    let typeOfChar = character === currentChar ? 'lower-case' : 'upper-case';
+
+//    console.log(typeOfChar);
 }
 lowerOrUpper('l');
