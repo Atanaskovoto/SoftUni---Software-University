@@ -7,6 +7,7 @@ function arrayRotation(array, rotations) {
         result.push(result.shift());
         rotations--;
     }
+    // Another solution:
     // for (let index = 0; index < rotations; index++) {
     //     let tempArray = []
     //     for (let i = 0; i < result.length - 1; i++) {
