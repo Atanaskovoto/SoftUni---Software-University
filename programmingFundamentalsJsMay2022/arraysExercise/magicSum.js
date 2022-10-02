@@ -10,5 +10,18 @@ function magicSum(array, sum) {
             }
         }
     }
+
+    // Another solution:
+
+    // for (let i = 0; i < input.length; i++) {
+    //     let currentNumber = input[i];
+    //     for (let n = i + 1; n < input.length; n++) {
+    //         let nextNumber = input[n];
+    //         let currentSum = currentNumber + nextNumber;
+    //         if (currentSum === number) {
+    //             console.log(`${currentNumber} ${nextNumber}`);
+    //         }
+    //     }
+    // }
 }
 magicSum([14, 20, 60, 13, 7, 19, 8], 27);
