@@ -16,4 +16,4 @@ function equalSums(array) {
     }
     console.log(index);
 }
-equalSums([1, 2, 3, 3]);
+equalSums([1, 2,]);
