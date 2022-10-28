@@ -21,6 +21,14 @@ function songs(input) {
         let currentSong = new Song(songData[0], songData[1], songData[2]);
         currentSong.print();
     }
+
+    // Another solution:
+    // for (const el of data) {
+    //     let [type, songName, time] = el.split('_');
+
+    //     let song = new Song(type, songName, time);
+    //     song.print();
+    // }
 }
 songs([3,
     'favourite_DownTown_3:14',
