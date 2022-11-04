@@ -14,6 +14,18 @@ function employees(input) {
         currentEmployee.print()
 
     }
+
+    // Another solution:
+
+    // for (let el of input) {
+
+    //     let employee = {
+    //         name: el,
+    //         nameLength: el.length,
+    //     }
+
+    //     console.log(`Name: ${employee.name} -- Personal Number: ${employee.nameLength}`);
+    // }
 }
 employees([
     'Silas Butler',
