@@ -15,6 +15,7 @@ function makeADictionary(input) {
   toString.forEach(string => {
     rezult.push(string.split(','));
   });
+
   for (let i = 0; i < rezult.length; i++) {
     let currentTerm = (rezult[i])[i];
     for (let s = i + 1; s < rezult.length; s++) {
