@@ -1,11 +1,15 @@
 function printEveryNthElementFromAnArray(input, n) {
-    const result = [];
+    // const result = [];
 
-    for (let i =0; i < input.length; i += n) {
-        result.push(input[i]);
-    }
+    // for (let i =0; i < input.length; i += n) {
+    //     result.push(input[i]);
+    // }
 
-    return result;
+    // return result; 
+
+    // Another solution:
+
+    return input.filter((el, index) => index % n == 0);
 }
 
 printEveryNthElementFromAnArray(['5',
