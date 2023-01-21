@@ -3,7 +3,7 @@ function townsToJson(input) {
         const info = data.split('|');
         info.pop();
         info.shift();
-        return [a, b, c] = info.map(el => el = el.trim());
+        return info.map(el => el = el.trim());
     }
 
     const townInfo = [];
