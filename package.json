@@ -1,0 +1,24 @@
+{
+  "name": "softuni---software-university",
+  "version": "1.0.0",
+  "description": "Here you will find solved tasks from different courses!",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha './{,!(node_modules)/**}/*.test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atanaskovoto/SoftUni-Software-University.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atanaskovoto/SoftUni-Software-University/issues"
+  },
+  "homepage": "https://github.com/Atanaskovoto/SoftUni-Software-University#readme",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
