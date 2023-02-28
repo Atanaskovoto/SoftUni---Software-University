@@ -8,3 +8,5 @@ Programming Basics with JavaScript link to Judge  https://judge.softuni.org/Cont
 Programming Basics Exams with JavaScript link to Judge https://judge.softuni.org/Contests#!/List/ByCategory/38/PB-Exams
 
 Programming Fundamentals with JavaScript link to Judge  https://judge.softuni.org/Contests#!/List/ByCategory/147/JS-Fundamentals
+
+JS Advanced link to Judge https://judge.softuni.org/Contests#!/List/ByCategory/160/JS-Advanced
