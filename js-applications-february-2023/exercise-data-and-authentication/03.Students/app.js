@@ -8,18 +8,20 @@ fetch(baseUrl)
     .then(data => {
         const students = Object.values(data);
         students.forEach(student => {
-            const trFirstName = document.createElement('tr');
-            trFirstName.textContent = student.firstName;
-            tbodyElement.appendChild(trFirstName);
+            const trElement = document.createElement('tr');
+            tbodyElement.appendChild(trElement);
+            const tdFirstName = document.createElement('td');
+            tdFirstName.textContent = student.firstName;
+            trElement.appendChild(tdFirstName);
             const tdLastName = document.createElement('td');
             tdLastName.textContent = student.lastName;
-            trFirstName.appendChild(tdLastName);
+            trElement.appendChild(tdLastName);
             const tdFacultyNumber = document.createElement('td');
             tdFacultyNumber.textContent = student.facultyNumber;
-            trFirstName.appendChild(tdFacultyNumber);
+            trElement.appendChild(tdFacultyNumber);
             const tdGrade = document.createElement('td');
             tdGrade.textContent = student.grade;
-            trFirstName.appendChild(tdGrade);
+            trElement.appendChild(tdGrade);
         });
     })
     .catch(err => console.log(err));
@@ -43,22 +45,24 @@ formElement.addEventListener('submit', (event) => {
         })
             .then(res => res.json())
             .then(student => {
-                const trFirstName = document.createElement('tr');
-                trFirstName.textContent = student.firstName;
-                tbodyElement.appendChild(trFirstName);
+                const trElement = document.createElement('tr');
+                tbodyElement.appendChild(trElement);
+                const tdFirstName = document.createElement('td');
+                tdFirstName.textContent = student.firstName;
+                trElement.appendChild(tdFirstName);
                 const tdLastName = document.createElement('td');
                 tdLastName.textContent = student.lastName;
-                trFirstName.appendChild(tdLastName);
+                trElement.appendChild(tdLastName);
                 const tdFacultyNumber = document.createElement('td');
                 tdFacultyNumber.textContent = student.facultyNumber;
-                trFirstName.appendChild(tdFacultyNumber);
+                trElement.appendChild(tdFacultyNumber);
                 const tdGrade = document.createElement('td');
                 tdGrade.textContent = student.grade;
-                trFirstName.appendChild(tdGrade);
+                trElement.appendChild(tdGrade);
             })
             .catch(err => console.log(err));
     }
-    
+
     function isValid() {
         isOk = true;
         for (const value of formData.values()) {
