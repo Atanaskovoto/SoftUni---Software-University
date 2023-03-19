@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Atanaskovoto/SoftUni-Software-University#readme",
   "dependencies": {
     "chai": "^4.3.7",
+    "lit-html": "^2.6.1",
     "mocha": "^10.2.0"
   },
   "devDependencies": {
