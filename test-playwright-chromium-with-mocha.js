@@ -9,9 +9,9 @@ describe('Custom test', function () {
         const page = await browser.newPage();
 
         await page.goto(url);
-       await page.click('text = Catalog');
+        await page.click('text = Catalog');
 
-        // await browser.close();
+        await browser.close();
 
         // expect(true).to.be.true;
     });
