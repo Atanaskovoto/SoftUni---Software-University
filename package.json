@@ -4,7 +4,8 @@
   "description": "Here you will find solved tasks from different courses!",
   "main": "index.js",
   "scripts": {
-    "test": "mocha './{,!(node_modules)/**}/*.test.js'"
+    "test": "mocha './{,!(node_modules)/**}/*.test.js'",
+    "start": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "dependencies": {
     "chai": "^4.3.7",
     "lit-html": "^2.6.1",
+    "lite-server": "^2.6.1",
     "mocha": "^10.2.0",
     "page": "^1.11.6"
   },
